@@ -15,7 +15,7 @@ def is_enabled(value, default):
 #main variables
 API_ID = int(environ.get('API_ID', '20303735'))
 API_HASH = environ.get('API_HASH', 'ad9caf94c667276cd912169d8a7f3705')
-BOT_TOKEN = environ.get('BOT_TOKEN', '7514478935:AAGgRuvWJLQOxwdWccIQXH2C5zLkC9ikuzA')
+BOT_TOKEN = environ.get('BOT_TOKEN', '8076433342:AAHSivI0GWktfeAtCrAjyySSyFRc-1RKQRc')
 
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '7194270989').split()]
 USERNAME = environ.get('USERNAME', "https://telegram.me/biisal")
@@ -53,10 +53,10 @@ YEARS = [f'{i}' for i in range(2024 , 2002,-1 )]
 SEASONS = [f'season {i}'for i in range (1 , 23)]
 REF_PREMIUM = 30
 PREMIUM_POINT = 1500
-auth_channel = environ.get('AUTH_CHANNEL', '100')
+auth_channel = environ.get('AUTH_CHANNEL', '')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
-SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '100'))
-request_channel = environ.get('REQUEST_CHANNEL', '100')
+SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', ''))
+request_channel = environ.get('REQUEST_CHANNEL', '')
 REQUEST_CHANNEL = int(request_channel) if request_channel and id_pattern.search(request_channel) else None
 UPI_PAY_LOGS = int(environ.get('UPI_PAY_LOGS', '-1002341682244'))
 MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', ''))
