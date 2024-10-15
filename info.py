@@ -15,27 +15,27 @@ def is_enabled(value, default):
 #main variables
 API_ID = int(environ.get('API_ID', '20303735'))
 API_HASH = environ.get('API_HASH', 'ad9caf94c667276cd912169d8a7f3705')
-BOT_TOKEN = environ.get('BOT_TOKEN', '8076433342:AAHSivI0GWktfeAtCrAjyySSyFRc-1RKQRc')
+BOT_TOKEN = environ.get('BOT_TOKEN', '7544156542:AAGkyIwOx6dqpTU1HwY1frgLG3NFIPMixVs')
 
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '7194270989').split()]
 USERNAME = environ.get('USERNAME', "https://telegram.me/biisal")
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002306263274'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002339530776'))
 MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/+4RB2-U2o9yE4ZmQ9')
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS'').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '').split()]
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://<db_username>:<db_64vBi5GjAIG9mKz5>@cluster0.oanm8.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 
 DATABASE_NAME = environ.get('DATABASE_NAME', "TELEGRAM_BOT_INFO")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
-LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1002387497656'))
+LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1002454215397'))
 QR_CODE = environ.get('QR_CODE', 'https://graph.org/file/ccb9db43e62a2e524928e.jpg')
 START_IMG = environ.get('START_IMG', 'https://graph.org/file/4dad0cc16f190468454ee.jpg')
-BIN_CHANNEL = int(environ.get('BIN_CHANNEL','-1002364700382'))
-DELETE_CHANNELS = int(environ.get('DELETE_CHANNELS','-1001905670346'))
+BIN_CHANNEL = int(environ.get('BIN_CHANNEL','-1002452841022'))
+DELETE_CHANNELS = int(environ.get('DELETE_CHANNELS',''))
 URL = environ.get('URL', 'mytestbot-jvdfhbj.com')
 STICKERS_IDS = ('CAACAgQAAxkBAAEK99dlfC7LDqnuwtGRkIoacot_dGC4zQACbg8AAuHqsVDaMQeY6CcRojME').split()
 FILE_AUTO_DEL_TIMER = int(environ.get('FILE_AUTO_DEL_TIMER', '600'))
 IS_VERIFY = is_enabled('IS_VERIFY', True)
-LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1002434179970'))
+LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1002495199595'))
 TUTORIAL = environ.get("TUTORIAL", "https://t.me/Movie_Url_link_downloader/17")
 VERIFY_IMG = environ.get("VERIFY_IMG", "https://graph.org/file/1669ab9af68eaa62c3ca4.jpg")
 SHORTENER_API = environ.get("SHORTENER_API", "5bb6e402dd86fb8774690a5f4a65d2a2c0c04877")
@@ -58,7 +58,7 @@ AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_chan
 SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', ''))
 request_channel = environ.get('REQUEST_CHANNEL', '')
 REQUEST_CHANNEL = int(request_channel) if request_channel and id_pattern.search(request_channel) else None
-UPI_PAY_LOGS = int(environ.get('UPI_PAY_LOGS', '-1002341682244'))
+UPI_PAY_LOGS = int(environ.get('UPI_PAY_LOGS', '-1002345341838'))
 MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', ''))
 
 AUTO_FILTER = is_enabled('AUTO_FILTER', True)
